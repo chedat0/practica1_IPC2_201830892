@@ -11,6 +11,24 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>com.mycompany.ipc2_practica1.Ipc2_practica1</exec.mainClass>
     </properties>
+    <build>
+        <plugins>   
+            <plugin>
+                <!--Build an executable JAR-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>                
+                <configuration> 
+                    <archive> 
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.mycompany.ipc2_practica1.Ipc2_practica1</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin> 
+        </plugins>
+    </build>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
         <dependency>

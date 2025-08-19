@@ -118,7 +118,7 @@ public class Ipc2_practica1 {
         
         // Botones
         UIManager.put("Button.background", PRIMARY);
-        UIManager.put("Button.foreground", WHITE);
+        UIManager.put("Button.foreground", Color.black);
         UIManager.put("Button.focus", SECONDARY);
         UIManager.put("Button.select", SECONDARY);
         UIManager.put("Button.darkShadow", PRIMARY_DARK);
